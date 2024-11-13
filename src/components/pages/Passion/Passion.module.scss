@@ -1,0 +1,360 @@
+// .Passion {
+//   .content {
+//     .passTop {
+//       padding: 60px 0;
+//       background: var(--bgcol);
+//       color: black;
+//       .passTopInline {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
+//         gap: 40px;
+//         h1 {
+//           display: flex;
+//           align-items: center;
+//           gap: 1px;
+//           span {
+//             width: 30.43px;
+//             height: 28.94px;
+//           }
+//         }
+//         p {
+//           font-size: 28px;
+//           font-style: italic;
+//           font-weight: 400;
+//           line-height: 42px;
+//           text-align: center;
+//           text-underline-position: from-font;
+//           text-decoration-skip-ink: none;
+//           width: 1006px;
+//           height: 126px;
+//         }
+//         h3 {
+//           font-size: 18px;
+//           font-weight: 400;
+//           line-height: 27px;
+//           text-align: left;
+//           text-underline-position: from-font;
+//           text-decoration-skip-ink: none;
+//         }
+//         h5 {
+//           display: flex;
+//           align-items: center;
+//           gap: 5px;
+//           h1 {
+//             width: 18px;
+//             height: 18px;
+//             border-radius: 50%;
+//             background: black;
+//           }
+//           h2 {
+//             width: 18px;
+//             height: 18px;
+//             border-radius: 50%;
+//             background: rgba(0, 0, 0, 0.411);
+//           }
+//         }
+//       }
+//     }
+//     .passBottom {
+//       background-color: var(--bgbludark);
+//       padding: 70px 0;
+//       .passBottomInline {
+//         display: flex;
+//         align-items: center;
+//         gap: 50px;
+//         img {
+//           width: 614px;
+//           height: 534px;
+//         }
+//         .passBottomText {
+//             display: flex;
+
+//             flex-direction: column;
+//             align-items: start;
+//             gap: 70px;
+//           h1 {
+//             font-size: 44px;
+//             font-weight: 700;
+//             line-height: 52.8px;
+//             text-align: left;
+//             text-underline-position: from-font;
+//             text-decoration-skip-ink: none;
+//             display: flex;
+//             flex-direction: column;
+//             gap:10px;
+//             span {
+//                 width: 30%;
+//                 height: 2px;
+//                 background: var(--bgcol);
+//             }
+//           }
+//           p {
+//             font-size: 22px;
+//             font-weight: 400;
+//             line-height: 33px;
+//             text-align: left;
+//             text-underline-position: from-font;
+//             text-decoration-skip-ink: none;
+//           }
+//           button {
+//             font-size: 18px;
+//             font-weight: 400;
+//             line-height: 27px;
+//             letter-spacing: 1px;
+//             text-align: center;
+//             text-underline-position: from-font;
+//             text-decoration-skip-ink: none;
+//             padding: 10px 20px;
+//             background: var(--bgcol);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Passion {
+  .content {
+    .passTop {
+      padding: clamp(30px, 5vw, 60px) 0;
+      background: var(--bgcol);
+      color: black;
+
+      .passTopInline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: clamp(20px, 4vw, 40px);
+
+        h1 {
+          display: flex;
+          align-items: center;
+          gap: clamp(0.5px, 0.2vw, 1px);
+
+          span {
+            width: clamp(15px, 3vw, 30px);
+            height: clamp(14px, 2.5vw, 28px);
+          }
+        }
+
+        p {
+          font-size: clamp(18px, 2vw, 28px);
+          font-style: italic;
+          font-weight: 400;
+          line-height: clamp(28px, 3vw, 42px);
+          width: clamp(80%, 80vw, 1006px);
+          height: auto;
+        }
+
+        h3 {
+          font-size: clamp(14px, 1.5vw, 18px);
+          font-weight: 400;
+          line-height: clamp(20px, 2.2vw, 27px);
+        }
+      }
+    }
+
+    .passBottom {
+      background-color: var(--bgbludark);
+      padding: clamp(40px, 7vw, 70px) 0;
+
+      .passBottomInline {
+        display: flex;
+        align-items: center;
+        gap: clamp(20px, 5vw, 50px);
+
+        img {
+          width: clamp(300px, 45vw, 614px);
+          height: clamp(260px, 40vw, 534px);
+        }
+
+        .passBottomText {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          
+          gap: clamp(30px, 7vw, 70px);
+
+          h1 {
+            font-size: clamp(28px, 4vw, 44px);
+            font-weight: 700;
+            line-height: clamp(36px, 6vw, 52.8px);
+            display: flex;
+            flex-direction: column;
+            gap: clamp(5px, 1vw, 10px);
+
+            span {
+              width: clamp(20%, 30%, 30%);
+              height: 2px;
+              background: var(--bgcol);
+            }
+          }
+
+          p {
+            font-size: clamp(16px, 2vw, 22px);
+            font-weight: 400;
+            line-height: clamp(24px, 3vw, 33px);
+          }
+
+          button {
+            font-size: clamp(14px, 1.8vw, 18px);
+            font-weight: 400;
+            line-height: clamp(20px, 2.5vw, 27px);
+            padding: clamp(5px, 1vw, 10px) clamp(10px, 2vw, 20px);
+            background: var(--bgcol);
+          }
+        }
+      }
+    }
+  }
+
+  // Адаптации для популярных размеров экрана
+  @media (max-width: 1024px) {
+    .passTopInline {
+      gap: 30px;
+
+      p {
+        font-size: 24px;
+        line-height: 36px;
+        width: 90%;
+      }
+    }
+
+    .passBottomInline {
+      gap: 40px;
+      
+      img {
+        width: 50vw;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .passTop {
+      padding: 40px 0;
+    }
+
+    .passBottomInline {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;      
+      text-align: center;
+      
+
+      img {
+        width: 80vw;
+        height: auto;
+      }
+
+      .passBottomText {
+        align-items: center;
+        
+        gap: 40px;
+        
+        // button {
+        //   text-align: center;
+        // }
+
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+          align-items: center;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .passTopInline {
+      gap: 20px;
+
+      p {
+        font-size: 20px;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+
+    .passBottomText {
+      gap: 30px;
+
+      h1 {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .passTop {
+      padding: 20px 0;
+    }
+
+    .passTopInline h1 span {
+      width: 20px;
+      height: 20px;
+    }
+
+    .passBottomText {
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
